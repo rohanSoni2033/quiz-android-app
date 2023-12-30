@@ -1,0 +1,82 @@
+[
+  {
+    "question": "What is the largest planet in our solar system?",
+    "optionA": "Mars",
+    "optionB": "Saturn",
+    "optionC": "Jupiter",
+    "optionD": "Venus",
+    "correctOption": 3
+  },
+  {
+    "question": "How many planets are there in our solar system?",
+    "optionA": "8",
+    "optionB": "9",
+    "optionC": "10",
+    "optionD": "11",
+    "correctOption": 1
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "optionA": "Mars",
+    "optionB": "Venus",
+    "optionC": "Mercury",
+    "optionD": "Neptune",
+    "correctOption": 1
+  },
+  {
+    "question": "What is the largest moon of Saturn?",
+    "optionA": "Io",
+    "optionB": "Ganymede",
+    "optionC": "Enceladus",
+    "optionD": "Titan",
+    "correctOption": 4
+  },
+  {
+    "question": "Which planet has the Great Red Spot?",
+    "optionA": "Mars",
+    "optionB": "Saturn",
+    "optionC": "Jupiter",
+    "optionD": "Uranus",
+    "correctOption": 3
+  },
+  {
+    "question": "What is the name of the galaxy that includes our solar system?",
+    "optionA": "Andromeda",
+    "optionB": "Milky Way",
+    "optionC": "Triangulum",
+    "optionD": "Whirlpool",
+    "correctOption": 2
+  },
+  {
+    "question": "How many moons does Earth have?",
+    "optionA": "0",
+    "optionB": "1",
+    "optionC": "2",
+    "optionD": "3",
+    "correctOption": 3
+  },
+  {
+    "question": "What is the smallest planet in our solar system?",
+    "optionA": "Mars",
+    "optionB": "Saturn",
+    "optionC": "Jupiter",
+    "optionD": "Mercury",
+    "correctOption": 4
+  },
+  {
+    "question": "Who was the first human to walk on the moon?",
+    "optionA": "Neil Armstrong",
+    "optionB": "Yuri Gagarin",
+    "optionC": "Buzz Aldrin",
+    "optionD": "John Glenn",
+    "correctOption": 1
+  },
+  {
+    "question": "What is the closest star to Earth (other than the Sun)?",
+    "optionA": "Proxima Centauri",
+    "optionB": "Alpha Centauri A",
+    "optionC": "Sirius",
+    "optionD": "Vega",
+    "correctOption": 1
+  }
+]
