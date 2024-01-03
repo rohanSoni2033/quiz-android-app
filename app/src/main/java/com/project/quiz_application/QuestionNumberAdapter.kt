@@ -9,10 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 
 
 class QuestionNumberAdapter(
-    private val totalQuestion: Int, private val callback: (currentQuestion: Int) -> Unit
+    private val questionNumberStates: ArrayList<ButtonState>
 ) : RecyclerView.Adapter<QuestionNumberAdapter.QuestionNumberViewHolder>() {
-
-    private var currentQuestionState: ButtonState = ButtonState.DISABLED
 
     class QuestionNumberViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private var questionNumberButton: Button
@@ -22,28 +20,26 @@ class QuestionNumberAdapter(
         }
 
         fun bind(
-            questionNumber: Int, state: ButtonState, callback: (currentQuestion: Int) -> Unit
+            questionNumber: Int, state: ButtonState
         ) {
-            questionNumberButton.text = questionNumber.toString()
+            questionNumberButton.text = "${questionNumber + 1}"
 
             when (state) {
                 ButtonState.SELECTED -> questionNumberButton.isSelected = true
+                ButtonState.DISABLED -> questionNumberButton.isSelected = false
                 ButtonState.CORRECT -> {
                     questionNumberButton.background = AppCompatResources.getDrawable(
                         itemView.context, R.drawable.correct_option_button
                     )
                     questionNumberButton.isSelected = true
                 }
+
                 ButtonState.WRONG -> {
                     questionNumberButton.background = AppCompatResources.getDrawable(
                         itemView.context, R.drawable.wrong_option_button
                     )
                     questionNumberButton.isSelected = true
                 }
-                ButtonState.DISABLED -> questionNumberButton.isSelected = false
-            }
-            questionNumberButton.setOnClickListener {
-                callback(questionNumber)
             }
         }
     }
@@ -54,16 +50,16 @@ class QuestionNumberAdapter(
         return QuestionNumberViewHolder(view)
     }
 
-    override fun getItemCount(): Int {
-        return totalQuestion
-    }
+    override fun getItemCount(): Int = questionNumberStates.size
 
     override fun onBindViewHolder(holder: QuestionNumberViewHolder, position: Int) {
-        holder.bind(position + 1, currentQuestionState, callback)
+        holder.bind(position, questionNumberStates[position])
     }
 
     fun selectButton(position: Int, state: ButtonState) {
-        currentQuestionState = state
-        notifyItemChanged(position)
+        if (questionNumberStates[position] == ButtonState.DISABLED || questionNumberStates[position] == ButtonState.SELECTED) {
+            questionNumberStates[position] = state
+            notifyItemChanged(position)
+        }
     }
 }

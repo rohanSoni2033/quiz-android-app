@@ -2,6 +2,7 @@ package com.project.quiz_application
 
 data class Question(
     val question: String,
+    val category: Int,
     val optionA: String,
     val optionB: String,
     val optionC: String,

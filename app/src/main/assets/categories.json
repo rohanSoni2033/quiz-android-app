@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "space",
+    "image": "planet.png"
+  },
+  {
+    "id": 2,
+    "name": "maths",
+    "image": "blackboard.png"
+  },
+  {
+    "id": 3,
+    "name": "biology",
+    "image": "heart.png"
+  },
+  {
+    "id": 4,
+    "name": "plants",
+    "image": "plant.png"
+  },
+  {
+    "id": 5,
+    "name": "geography",
+    "image": "globe.png"
+  }
+]
