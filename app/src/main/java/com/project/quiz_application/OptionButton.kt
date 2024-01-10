@@ -32,21 +32,28 @@ class OptionButton(context: Context, attributeSet: AttributeSet) :
         }
     }
 
-    fun selectButton() {
-        optionButton.isSelected = true
-    }
+    var buttonSelected = false
+        set(value) {
+            optionButton.isSelected = value
+            field = value
+        }
 
-    fun disableButton() {
-        optionButton.isEnabled = false
-    }
+    var buttonEnabled = true
+        set(value) {
+            optionButton.isEnabled = value
+            field = value
+        }
 
-    fun enableButton() {
-        optionButton.isEnabled = true
-    }
+    var visibility = false
+        set(value) {
+            if (value) {
+                checkButton.visibility = View.VISIBLE
+            } else {
+                checkButton.visibility = View.GONE
+            }
+            field = value
+        }
 
-    fun unSelectButton() {
-        optionButton.isSelected = false
-    }
 
     fun setCheckButtonClickListener(callback: (id: Int) -> Unit) {
         checkButton.setOnClickListener {
@@ -54,36 +61,35 @@ class OptionButton(context: Context, attributeSet: AttributeSet) :
         }
     }
 
-    fun resetButton(){
+    fun resetButton() {
         wrongImageView.visibility = View.GONE
         correctImageView.visibility = View.GONE
-        optionButton.background = AppCompatResources.getDrawable(context, R.drawable.option_button_selector)
+        optionButton.background =
+            AppCompatResources.getDrawable(context, R.drawable.option_button_selector)
+        optionButton.isSelected = false
     }
 
-    fun setText(text: String) {
-        optionButton.text = text
-    }
 
-    fun showCheckButton() {
-        checkButton.visibility = View.VISIBLE
-    }
-
-    fun hideCheckButton() {
-        checkButton.visibility = View.GONE
-    }
+    var text: String = ""
+        set(value) {
+            optionButton.text = value
+            field = value
+        }
 
     fun setCorrectOption() {
         optionButton.background =
-            AppCompatResources.getDrawable(context, R.drawable.correct_option_button)
-        correctImageView.visibility = View.VISIBLE
+            AppCompatResources.getDrawable(context, R.drawable.correct_background)
         optionButton.isSelected = true
+
+        correctImageView.visibility = View.VISIBLE
         checkButton.visibility = View.GONE
     }
 
     fun setWrongOption() {
         optionButton.background =
-            AppCompatResources.getDrawable(context, R.drawable.wrong_option_button)
+            AppCompatResources.getDrawable(context, R.drawable.wrong_background)
         optionButton.isSelected = true
+
         wrongImageView.visibility = View.VISIBLE
         checkButton.visibility = View.GONE
     }

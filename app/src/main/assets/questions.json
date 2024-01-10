@@ -1,6 +1,7 @@
 [
   {
     "question": "What is the largest planet in our solar system?",
+    "categoryId": 1,
     "optionA": "Mars",
     "optionB": "Saturn",
     "optionC": "Jupiter",
@@ -9,6 +10,7 @@
   },
   {
     "question": "How many planets are there in our solar system?",
+    "categoryId": 1,
     "optionA": "8",
     "optionB": "9",
     "optionC": "10",
@@ -17,6 +19,7 @@
   },
   {
     "question": "Which planet is known as the Red Planet?",
+    "categoryId": 1,
     "optionA": "Mars",
     "optionB": "Venus",
     "optionC": "Mercury",
@@ -25,6 +28,7 @@
   },
   {
     "question": "What is the largest moon of Saturn?",
+    "categoryId": 1,
     "optionA": "Io",
     "optionB": "Ganymede",
     "optionC": "Enceladus",
@@ -33,6 +37,7 @@
   },
   {
     "question": "Which planet has the Great Red Spot?",
+    "categoryId": 1,
     "optionA": "Mars",
     "optionB": "Saturn",
     "optionC": "Jupiter",
@@ -41,6 +46,7 @@
   },
   {
     "question": "What is the name of the galaxy that includes our solar system?",
+    "categoryId": 1,
     "optionA": "Andromeda",
     "optionB": "Milky Way",
     "optionC": "Triangulum",
@@ -48,15 +54,8 @@
     "correctOption": 2
   },
   {
-    "question": "How many moons does Earth have?",
-    "optionA": "0",
-    "optionB": "1",
-    "optionC": "2",
-    "optionD": "3",
-    "correctOption": 3
-  },
-  {
     "question": "What is the smallest planet in our solar system?",
+    "categoryId": 1,
     "optionA": "Mars",
     "optionB": "Saturn",
     "optionC": "Jupiter",
@@ -65,6 +64,7 @@
   },
   {
     "question": "Who was the first human to walk on the moon?",
+    "categoryId": 1,
     "optionA": "Neil Armstrong",
     "optionB": "Yuri Gagarin",
     "optionC": "Buzz Aldrin",
@@ -73,10 +73,722 @@
   },
   {
     "question": "What is the closest star to Earth (other than the Sun)?",
+    "categoryId": 1,
     "optionA": "Proxima Centauri",
     "optionB": "Alpha Centauri A",
     "optionC": "Sirius",
     "optionD": "Vega",
     "correctOption": 1
+  },
+  {
+    "question": "What is the phenomenon where light is bent due to gravity, often observed around massive objects?",
+    "categoryId": 1,
+    "optionA": "Eclipse",
+    "optionB": "Refraction",
+    "optionC": "Gravitational Lensing",
+    "optionD": "Aurora",
+    "correctOption": 3
+  },
+  {
+    "question": "What is the name of the first artificial satellite launched into Earth's orbit?",
+    "categoryId": 1,
+    "optionA": "Vostok 1",
+    "optionB": "Explorer 1",
+    "optionC": "Sputnik 1",
+    "optionD": "Apollo 11",
+    "correctOption": 3
+  },
+  {
+    "question": "Which dwarf planet was formerly considered the ninth planet in our solar system?",
+    "categoryId": 1,
+    "optionA": "Pluto",
+    "optionB": "Eris",
+    "optionC": "Haumea",
+    "optionD": "Ceres",
+    "correctOption": 1
+  },
+  {
+    "question": "What is the name of the process by which a star converts hydrogen into helium, releasing energy?",
+    "categoryId": 1,
+    "optionA": "Nuclear Fusion",
+    "optionB": "Nuclear Fission",
+    "optionC": "Ionization",
+    "optionD": "Radiation",
+    "correctOption": 1
+  },
+  {
+    "question": "What is the name of the phenomenon where a massive star collapses under its gravity, resulting in a powerful explosion?",
+    "categoryId": 1,
+    "optionA": "Supernova",
+    "optionB": "Black Hole",
+    "optionC": "Nebula",
+    "optionD": "Pulsar",
+    "correctOption": 1
+  },
+  {
+    "question": "Which planet is known as the 'Morning Star' or 'Evening Star' due to its brightness in the sky?",
+    "categoryId": 1,
+    "optionA": "Mercury",
+    "optionB": "Venus",
+    "optionC": "Mars",
+    "optionD": "Jupiter",
+    "correctOption": 2
+  },
+  {
+    "question": "Which moon of Jupiter is known for its intense volcanic activity?",
+    "categoryId": 1,
+    "optionA": "Europa",
+    "optionB": "Ganymede",
+    "optionC": "Io",
+    "optionD": "Callisto",
+    "correctOption": 3
+  },
+  {
+    "question": "What is the powerhouse of the cell?",
+    "categoryId": 2,
+    "optionA": "Nucleus",
+    "optionB": "Mitochondria",
+    "optionC": "Ribosome",
+    "optionD": "Endoplasmic Reticulum",
+    "correctOption": 2
+  },
+  {
+    "question": "Which gas do plants absorb during photosynthesis?",
+    "categoryId": 2,
+    "optionA": "Oxygen",
+    "optionB": "Carbon Dioxide",
+    "optionC": "Nitrogen",
+    "optionD": "Hydrogen",
+    "correctOption": 2
+  },
+  {
+    "question": "What is the largest organ in the human body?",
+    "categoryId": 2,
+    "optionA": "Heart",
+    "optionB": "Brain",
+    "optionC": "Skin",
+    "optionD": "Liver",
+    "correctOption": 3
+  },
+  {
+    "question": "Which part of the flower produces pollen?",
+    "categoryId": 2,
+    "optionA": "Stamen",
+    "optionB": "Pistil",
+    "optionC": "Sepal",
+    "optionD": "Petals",
+    "correctOption": 1
+  },
+  {
+    "question": "What is the basic unit of heredity?",
+    "categoryId": 2,
+    "optionA": "Gene",
+    "optionB": "Chromosome",
+    "optionC": "Cell",
+    "optionD": "DNA",
+    "correctOption": 4
+  },
+  {
+    "question": "Which organ is responsible for filtering blood and removing waste products?",
+    "categoryId": 2,
+    "optionA": "Liver",
+    "optionB": "Lungs",
+    "optionC": "Kidneys",
+    "optionD": "Heart",
+    "correctOption": 3
+  },
+  {
+    "question": "What is the process by which plants make their own food?",
+    "categoryId": 2,
+    "optionA": "Respiration",
+    "optionB": "Photosynthesis",
+    "optionC": "Fermentation",
+    "optionD": "Digestion",
+    "correctOption": 2
+  },
+  {
+    "question": "Which vitamin is known as the 'sunshine vitamin'?",
+    "categoryId": 2,
+    "optionA": "Vitamin A",
+    "optionB": "Vitamin C",
+    "optionC": "Vitamin D",
+    "optionD": "Vitamin K",
+    "correctOption": 3
+  },
+  {
+    "question": "What is the process of cell division called?",
+    "categoryId": 2,
+    "optionA": "Mitosis",
+    "optionB": "Meiosis",
+    "optionC": "Fission",
+    "optionD": "Budding",
+    "correctOption": 1
+  },
+  {
+    "question": "Which gas is produced during the process of respiration?",
+    "categoryId": 2,
+    "optionA": "Oxygen",
+    "optionB": "Carbon Dioxide",
+    "optionC": "Nitrogen",
+    "optionD": "Hydrogen",
+    "correctOption": 2
+  },
+  {
+    "question": "What is the role of white blood cells in the immune system?",
+    "categoryId": 2,
+    "optionA": "Transporting Oxygen",
+    "optionB": "Clotting Blood",
+    "optionC": "Fighting Infections",
+    "optionD": "Digesting Food",
+    "correctOption": 3
+  },
+  {
+    "question": "Which part of the human brain is responsible for controlling basic life functions like breathing and heart rate?",
+    "categoryId": 2,
+    "optionA": "Cerebrum",
+    "optionB": "Cerebellum",
+    "optionC": "Medulla Oblongata",
+    "optionD": "Hippocampus",
+    "correctOption": 3
+  },
+  {
+    "question": "What is the sum of 5 and 7?",
+    "categoryId": 3,
+    "optionA": "9",
+    "optionB": "11",
+    "optionC": "13",
+    "optionD": "15",
+    "correctOption": 2
+  },
+  {
+    "question": "If a rectangle has a length of 8 units and a width of 4 units, what is its area?",
+    "categoryId": 3,
+    "optionA": "12 square units",
+    "optionB": "24 square units",
+    "optionC": "32 square units",
+    "optionD": "40 square units",
+    "correctOption": 1
+  },
+  {
+    "question": "Simplify the expression: 3 + 2 * 4",
+    "categoryId": 3,
+    "optionA": "15",
+    "optionB": "20",
+    "optionC": "11",
+    "optionD": "7",
+    "correctOption": 2
+  },
+  {
+    "question": "What is the product of 9 and 6?",
+    "categoryId": 3,
+    "optionA": "45",
+    "optionB": "54",
+    "optionC": "63",
+    "optionD": "72",
+    "correctOption": 3
+  },
+  {
+    "question": "If x = 3 and y = 5, what is the value of 2x + y?",
+    "categoryId": 3,
+    "optionA": "11",
+    "optionB": "13",
+    "optionC": "15",
+    "optionD": "17",
+    "correctOption": 3
+  },
+  {
+    "question": "What is the square root of 64?",
+    "categoryId": 3,
+    "optionA": "6",
+    "optionB": "7",
+    "optionC": "8",
+    "optionD": "9",
+    "correctOption": 3
+  },
+  {
+    "question": "If a right-angled triangle has sides of length 3, 4, and 5 units, what is the length of the hypotenuse?",
+    "categoryId": 3,
+    "optionA": "6",
+    "optionB": "7",
+    "optionC": "8",
+    "optionD": "9",
+    "correctOption": 3
+  },
+  {
+    "question": "What is the difference between 15 and 9?",
+    "categoryId": 3,
+    "optionA": "4",
+    "optionB": "5",
+    "optionC": "6",
+    "optionD": "7",
+    "correctOption": 1
+  },
+  {
+    "question": "If a circle has a radius of 5 units, what is its circumference? (Use π = 3.14)",
+    "categoryId": 3,
+    "optionA": "10π",
+    "optionB": "15π",
+    "optionC": "20π",
+    "optionD": "25π",
+    "correctOption": 4
+  },
+  {
+    "question": "What is the value of 2^3?",
+    "categoryId": 3,
+    "optionA": "6",
+    "optionB": "8",
+    "optionC": "12",
+    "optionD": "16",
+    "correctOption": 2
+  },
+  {
+    "question": "If a box has dimensions 4 cm, 6 cm, and 8 cm, what is its volume?",
+    "categoryId": 3,
+    "optionA": "120 cm³",
+    "optionB": "192 cm³",
+    "optionC": "240 cm³",
+    "optionD": "288 cm³",
+    "correctOption": 3
+  },
+  {
+    "question": "What is the perimeter of a square with sides of length 9 units?",
+    "categoryId": 3,
+    "optionA": "27 units",
+    "optionB": "36 units",
+    "optionC": "45 units",
+    "optionD": "54 units",
+    "correctOption": 2
+  },
+  {
+    "question": "If a number is increased by 25% of itself, what is the total increase as a percentage of the original number?",
+    "categoryId": 3,
+    "optionA": "20%",
+    "optionB": "25%",
+    "optionC": "30%",
+    "optionD": "35%",
+    "correctOption": 3
+  },
+  {
+    "question": "What is the median of the following set of numbers: 3, 7, 2, 5, 8?",
+    "categoryId": 3,
+    "optionA": "3",
+    "optionB": "5",
+    "optionC": "7",
+    "optionD": "8",
+    "correctOption": 2
+  },
+  {
+    "question": "If the sum of two angles is 90 degrees, and one angle is 35 degrees, what is the measure of the other angle?",
+    "categoryId": 4,
+    "optionA": "45 degrees",
+    "optionB": "55 degrees",
+    "optionC": "65 degrees",
+    "optionD": "75 degrees",
+    "correctOption": 1
+  },
+  {
+    "question": "What is the process by which plants make their own food?",
+    "categoryId": 4,
+    "optionA": "Photosynthesis",
+    "optionB": "Respiration",
+    "optionC": "Transpiration",
+    "optionD": "Digestion",
+    "correctOption": 1
+  },
+  {
+    "question": "Which part of the plant absorbs water and nutrients from the soil?",
+    "categoryId": 4,
+    "optionA": "Leaves",
+    "optionB": "Stem",
+    "optionC": "Roots",
+    "optionD": "Flowers",
+    "correctOption": 3
+  },
+  {
+    "question": "What is the protective outer layer of a plant cell called?",
+    "categoryId": 4,
+    "optionA": "Cell Wall",
+    "optionB": "Cell Membrane",
+    "optionC": "Nucleus",
+    "optionD": "Chloroplast",
+    "correctOption": 1
+  },
+  {
+    "question": "Which gas is essential for photosynthesis in plants?",
+    "categoryId": 4,
+    "optionA": "Oxygen",
+    "optionB": "Nitrogen",
+    "optionC": "Carbon Dioxide",
+    "optionD": "Hydrogen",
+    "correctOption": 3
+  },
+  {
+    "question": "What is the main function of chlorophyll in plant cells?",
+    "categoryId": 4,
+    "optionA": "Absorb Water",
+    "optionB": "Capture Sunlight",
+    "optionC": "Store Nutrients",
+    "optionD": "Produce Oxygen",
+    "correctOption": 2
+  },
+  {
+    "question": "Which plant organ is responsible for the production of seeds?",
+    "categoryId": 4,
+    "optionA": "Leaves",
+    "optionB": "Stem",
+    "optionC": "Roots",
+    "optionD": "Flowers",
+    "correctOption": 4
+  },
+  {
+    "question": "What is the purpose of the stomata in plant leaves?",
+    "categoryId": 4,
+    "optionA": "Water Absorption",
+    "optionB": "Gas Exchange",
+    "optionC": "Nutrient Storage",
+    "optionD": "Photosynthesis",
+    "correctOption": 2
+  },
+  {
+    "question": "Which plant hormone is responsible for growth towards light?",
+    "categoryId": 4,
+    "optionA": "Auxin",
+    "optionB": "Gibberellin",
+    "optionC": "Cytokinin",
+    "optionD": "Ethylene",
+    "correctOption": 1
+  },
+  {
+    "question": "What is the primary function of the xylem in plants?",
+    "categoryId": 4,
+    "optionA": "Transport Water",
+    "optionB": "Produce Sugars",
+    "optionC": "Protect Cells",
+    "optionD": "Store Nutrients",
+    "correctOption": 1
+  },
+  {
+    "question": "Which structure in a plant cell is responsible for converting light energy into chemical energy?",
+    "categoryId": 4,
+    "optionA": "Mitochondria",
+    "optionB": "Nucleus",
+    "optionC": "Chloroplast",
+    "optionD": "Endoplasmic Reticulum",
+    "correctOption": 3
+  },
+  {
+    "question": "What is the purpose of the phloem in plants?",
+    "categoryId": 4,
+    "optionA": "Transport Water",
+    "optionB": "Produce Sugars",
+    "optionC": "Protect Cells",
+    "optionD": "Store Nutrients",
+    "correctOption": 2
+  },
+  {
+    "question": "Which plant adaptation allows them to survive in arid environments?",
+    "categoryId": 4,
+    "optionA": "Deciduous Leaves",
+    "optionB": "Succulent Tissues",
+    "optionC": "Needle-Like Leaves",
+    "optionD": "Wide Surface Leaves",
+    "correctOption": 2
+  },
+  {
+    "question": "What is the primary function of the root hairs in plants?",
+    "categoryId": 4,
+    "optionA": "Anchor the Plant",
+    "optionB": "Absorb Water and Nutrients",
+    "optionC": "Produce Oxygen",
+    "optionD": "Photosynthesis",
+    "correctOption": 2
+  },
+  {
+    "question": "Which gas is released during plant respiration?",
+    "categoryId": 4,
+    "optionA": "Oxygen",
+    "optionB": "Nitrogen",
+    "optionC": "Carbon Dioxide",
+    "optionD": "Hydrogen",
+    "correctOption": 3
+  },
+  {
+    "question": "What is the function of the cotyledons in a seed?",
+    "categoryId": 4,
+    "optionA": "Seed Protection",
+    "optionB": "Nutrient Storage",
+    "optionC": "First Leaf Structures",
+    "optionD": "Water Absorption",
+    "correctOption": 3
+  },
+  {
+    "question": "Which is the longest river in the world?",
+    "categoryId": 5,
+    "optionA": "Nile",
+    "optionB": "Amazon",
+    "optionC": "Yangtze",
+    "optionD": "Mississippi",
+    "correctOption": 2
+  },
+  {
+    "question": "What is the capital of France?",
+    "categoryId": 5,
+    "optionA": "Berlin",
+    "optionB": "Madrid",
+    "optionC": "Paris",
+    "optionD": "Rome",
+    "correctOption": 3
+  },
+  {
+    "question": "Which continent is known as the 'Land Down Under'?",
+    "categoryId": 5,
+    "optionA": "North America",
+    "optionB": "Africa",
+    "optionC": "Australia",
+    "optionD": "South America",
+    "correctOption": 3
+  },
+  {
+    "question": "What is the largest desert in the world?",
+    "categoryId": 5,
+    "optionA": "Sahara Desert",
+    "optionB": "Arctic Desert",
+    "optionC": "Gobi Desert",
+    "optionD": "Antarctica",
+    "correctOption": 4
+  },
+  {
+    "question": "Which mountain is the highest peak in the world?",
+    "categoryId": 5,
+    "optionA": "Mount Kilimanjaro",
+    "optionB": "Mount Everest",
+    "optionC": "Mount McKinley",
+    "optionD": "Mount Fuji",
+    "correctOption": 2
+  },
+  {
+    "question": "In which country is the Great Barrier Reef located?",
+    "categoryId": 5,
+    "optionA": "Brazil",
+    "optionB": "Australia",
+    "optionC": "Mexico",
+    "optionD": "India",
+    "correctOption": 2
+  },
+  {
+    "question": "What is the capital of Japan?",
+    "categoryId": 5,
+    "optionA": "Seoul",
+    "optionB": "Beijing",
+    "optionC": "Tokyo",
+    "optionD": "Bangkok",
+    "correctOption": 3
+  },
+  {
+    "question": "Which ocean is the largest by size?",
+    "categoryId": 5,
+    "optionA": "Atlantic Ocean",
+    "optionB": "Indian Ocean",
+    "optionC": "Southern Ocean",
+    "optionD": "Pacific Ocean",
+    "correctOption": 4
+  },
+  {
+    "question": "What is the capital of Canada?",
+    "categoryId": 5,
+    "optionA": "Ottawa",
+    "optionB": "Toronto",
+    "optionC": "Vancouver",
+    "optionD": "Montreal",
+    "correctOption": 1
+  },
+  {
+    "question": "Which country is known as the 'Land of the Rising Sun'?",
+    "categoryId": 5,
+    "optionA": "China",
+    "optionB": "Japan",
+    "optionC": "South Korea",
+    "optionD": "Vietnam",
+    "correctOption": 2
+  },
+  {
+    "question": "What is the largest island in the world?",
+    "categoryId": 5,
+    "optionA": "Greenland",
+    "optionB": "Australia",
+    "optionC": "Borneo",
+    "optionD": "Madagascar",
+    "correctOption": 1
+  },
+  {
+    "question": "Which river is the longest in Europe?",
+    "categoryId": 5,
+    "optionA": "Danube",
+    "optionB": "Volga",
+    "optionC": "Thames",
+    "optionD": "Rhine",
+    "correctOption": 2
+  },
+  {
+    "question": "In which country is the Serengeti National Park located?",
+    "categoryId": 5,
+    "optionA": "South Africa",
+    "optionB": "Kenya",
+    "optionC": "Tanzania",
+    "optionD": "Namibia",
+    "correctOption": 3
+  },
+  {
+    "question": "What is the largest country by land area?",
+    "categoryId": 5,
+    "optionA": "China",
+    "optionB": "United States",
+    "optionC": "Russia",
+    "optionD": "Canada",
+    "correctOption": 3
+  },
+  {
+    "question": "Which strait connects the Mediterranean Sea to the Black Sea?",
+    "categoryId": 5,
+    "optionA": "Strait of Gibraltar",
+    "optionB": "Bering Strait",
+    "optionC": "Dardanelles",
+    "optionD": "Strait of Bosporus",
+    "correctOption": 4
+  },
+  {
+    "question": "Which river is considered the holiest in Hinduism and is often referred to as the 'Ganga'?",
+    "categoryId": 6,
+    "optionA": "Yamuna",
+    "optionB": "Brahmaputra",
+    "optionC": "Saraswati",
+    "optionD": "Ganges",
+    "correctOption": 4
+  },
+  {
+    "question": "What is the capital city of India?",
+    "categoryId": 6,
+    "optionA": "Mumbai",
+    "optionB": "New Delhi",
+    "optionC": "Kolkata",
+    "optionD": "Chennai",
+    "correctOption": 2
+  },
+  {
+    "question": "Which famous Indian leader is known as the 'Father of the Nation'?",
+    "categoryId": 6,
+    "optionA": "Jawaharlal Nehru",
+    "optionB": "Sardar Patel",
+    "optionC": "Subhas Chandra Bose",
+    "optionD": "Mahatma Gandhi",
+    "correctOption": 4
+  },
+  {
+    "question": "What is the national currency of India?",
+    "categoryId": 6,
+    "optionA": "Rupee",
+    "optionB": "Rupiah",
+    "optionC": "Ringgit",
+    "optionD": "Dinar",
+    "correctOption": 1
+  },
+  {
+    "question": "Which festival is widely celebrated in India as the 'Festival of Lights'?",
+    "categoryId": 6,
+    "optionA": "Holi",
+    "optionB": "Diwali",
+    "optionC": "Eid",
+    "optionD": "Navratri",
+    "correctOption": 2
+  },
+  {
+    "question": "Who was the first woman Prime Minister of India?",
+    "categoryId": 6,
+    "optionA": "Indira Gandhi",
+    "optionB": "Sonia Gandhi",
+    "optionC": "Pratibha Patil",
+    "optionD": "Margaret Thatcher",
+    "correctOption": 1
+  },
+  {
+    "question": "Which mountain range forms the northern boundary of India?",
+    "categoryId": 6,
+    "optionA": "Himalayas",
+    "optionB": "Alps",
+    "optionC": "Andes",
+    "optionD": "Rocky Mountains",
+    "correctOption": 1
+  },
+  {
+    "question": "In which year did India gain independence from British rule?",
+    "categoryId": 6,
+    "optionA": "1942",
+    "optionB": "1947",
+    "optionC": "1950",
+    "optionD": "1962",
+    "correctOption": 2
+  },
+  {
+    "question": "Which Indian city is famous for its IT industry and is known as the 'Silicon Valley of India'?",
+    "categoryId": 6,
+    "optionA": "Hyderabad",
+    "optionB": "Bangalore",
+    "optionC": "Pune",
+    "optionD": "Chennai",
+    "correctOption": 2
+  },
+  {
+    "question": "What is the largest state in India by area?",
+    "categoryId": 6,
+    "optionA": "Maharashtra",
+    "optionB": "Uttar Pradesh",
+    "optionC": "Rajasthan",
+    "optionD": "Madhya Pradesh",
+    "correctOption": 3
+  },
+  {
+    "question": "Which Indian cricket player is often referred to as the 'Master Blaster'?",
+    "categoryId": 6,
+    "optionA": "Virat Kohli",
+    "optionB": "Rohit Sharma",
+    "optionC": "Sachin Tendulkar",
+    "optionD": "MS Dhoni",
+    "correctOption": 3
+  },
+  {
+    "question": "Which ancient Indian system of medicine focuses on a holistic approach to health and wellness?",
+    "categoryId": 6,
+    "optionA": "Ayurveda",
+    "optionB": "Homeopathy",
+    "optionC": "Allopathy",
+    "optionD": "Naturopathy",
+    "correctOption": 1
+  },
+  {
+    "question": "What is the national animal of India?",
+    "categoryId": 6,
+    "optionA": "Elephant",
+    "optionB": "Tiger",
+    "optionC": "Lion",
+    "optionD": "Leopard",
+    "correctOption": 2
+  },
+  {
+    "question": "Which famous Indian festival marks the harvest season and is known for its dance and music celebrations?",
+    "categoryId": 6,
+    "optionA": "Pongal",
+    "optionB": "Bihu",
+    "optionC": "Lohri",
+    "optionD": "Onam",
+    "correctOption": 1
+  },
+  {
+    "question": "In which state is the Taj Mahal located?",
+    "categoryId": 6,
+    "optionA": "Rajasthan",
+    "optionB": "Uttar Pradesh",
+    "optionC": "Madhya Pradesh",
+    "optionD": "Haryana",
+    "correctOption": 2
   }
 ]

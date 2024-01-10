@@ -1,4 +1,4 @@
-package com.project.quiz_application
+package com.project.quiz_application.adapters
 
 import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
@@ -8,43 +8,44 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.project.quiz_application.models.Category
+import com.project.quiz_application.R
 
 class QuizCategoryAdapter(
     private val categories: List<Category>
 ) : RecyclerView.Adapter<QuizCategoryAdapter.QuizCategoryViewHolder>() {
 
     private var selectedCategoryId: Int? = null
-
-    // this holds the selected position it will change when user click on any card
     private var selectedPosition = RecyclerView.NO_POSITION
 
     inner class QuizCategoryViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private var nameTextView: TextView
-        private var imageImageView: ImageView
+        private var quizCategoryName: TextView
+        private var quizCategoryImage: ImageView
         private var quizCategoryCard: CardView
 
         init {
-            nameTextView = itemView.findViewById(R.id.quiz_category_name)
-            imageImageView = itemView.findViewById(R.id.quiz_category_image)
+            quizCategoryName = itemView.findViewById(R.id.quiz_category_name)
+            quizCategoryImage = itemView.findViewById(R.id.quiz_category_image)
             quizCategoryCard = itemView.findViewById(R.id.quiz_category_card)
         }
 
-        fun bind(adapterPosition: Int) {
-            val category = categories[adapterPosition]
+        fun bind(position: Int) {
+            val category = categories[position]
+
+            quizCategoryName.text = category.name
 
             val categoryImage = itemView.context.assets.open(category.image)
             val d = Drawable.createFromStream(categoryImage, null)
-
-            nameTextView.text = category.name
-            imageImageView.setImageDrawable(d)
+            quizCategoryImage.setImageDrawable(d)
 
             quizCategoryCard.setOnClickListener {
-                selectedCategoryId = categories[adapterPosition].id
+                selectedCategoryId = categories[position].id
                 notifyItemChanged(selectedPosition)
-                notifyItemChanged(adapterPosition)
-                selectedPosition = adapterPosition
+                notifyItemChanged(position)
+                selectedPosition = position
             }
-            quizCategoryCard.isSelected = adapterPosition == selectedPosition
+
+            quizCategoryCard.isSelected = position == selectedPosition
         }
     }
 

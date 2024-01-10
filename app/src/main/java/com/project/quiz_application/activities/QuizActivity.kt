@@ -1,13 +1,18 @@
-package com.project.quiz_application
+package com.project.quiz_application.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.SeekBar
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.gson.Gson
+import com.project.quiz_application.ButtonState
+import com.project.quiz_application.OptionButton
+import com.project.quiz_application.models.Question
+import com.project.quiz_application.R
+import com.project.quiz_application.Utils
+import com.project.quiz_application.adapters.QuestionNumberAdapter
 
 class QuizActivity : AppCompatActivity() {
     private lateinit var questionNumberRecyclerView: RecyclerView
@@ -35,30 +40,27 @@ class QuizActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz)
 
-        questionNumberRecyclerView = findViewById(R.id.category_recycler_view)
-
+        questionNumberRecyclerView = findViewById(R.id.categories_recycler_view)
         optionAButton = findViewById(R.id.option_a_button)
         optionBButton = findViewById(R.id.option_b_button)
         optionCButton = findViewById(R.id.option_c_button)
         optionDButton = findViewById(R.id.option_d_button)
-
         questionNumberTextView = findViewById(R.id.question_number_text_view)
         questionTextView = findViewById(R.id.question_text_view)
         quizProgressSeekBar = findViewById(R.id.quiz_progress_seek_bar)
         nextQuestionButton = findViewById(R.id.next_question_button)
         previousQuestionButton = findViewById(R.id.previous_question_button)
 
-        questions.addAll(getQuestions())
+
+        val selectedCategoryId = intent.getIntExtra("categoryId", 1)
+        questions.addAll(getQuestions(selectedCategoryId))
 
         questionNumberRecyclerView.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-
         val questionNumberButtonState = arrayListOf<ButtonState>()
-
         for (i in 0 until questions.size) {
             questionNumberButtonState.add(i, ButtonState.DISABLED)
         }
-
         adapter = QuestionNumberAdapter(questionNumberButtonState)
 
         questionNumberRecyclerView.adapter = adapter
@@ -97,10 +99,10 @@ class QuizActivity : AppCompatActivity() {
         quizProgressSeekBar.progress = progress
         questionTextView.text = question.question
 
-        optionAButton.setText(question.optionA)
-        optionBButton.setText(question.optionB)
-        optionCButton.setText(question.optionC)
-        optionDButton.setText(question.optionD)
+        optionAButton.text = question.optionA
+        optionBButton.text = question.optionB
+        optionCButton.text = question.optionC
+        optionDButton.text = question.optionD
 
         clearOptionSelection()
 
@@ -127,42 +129,39 @@ class QuizActivity : AppCompatActivity() {
                 3 -> optionCButton.setCorrectOption()
                 4 -> optionDButton.setCorrectOption()
             }
-            optionAButton.disableButton()
-            optionBButton.disableButton()
-            optionCButton.disableButton()
-            optionDButton.disableButton()
+            optionAButton.buttonEnabled = true
+            optionBButton.buttonEnabled = true
+            optionCButton.buttonEnabled = true
+            optionDButton.buttonEnabled = true
         }
 
         adapter.selectButton(currentQuestionNumber, ButtonState.SELECTED)
     }
 
-    private fun getQuestions(): List<Question> {
-        val questionsListJson =
-            applicationContext.assets.open("questions.json").bufferedReader().use {
-                it.readText()
-            }
-        val gson = Gson()
-        return gson.fromJson(questionsListJson, Array<Question>::class.java).toList()
+    private fun getQuestions(categoryId: Int): List<Question> {
+        val questions = Utils.loadJsonFile<Question>(this, "questions.json")
+
+        return questions.filter {
+            it.categoryId == categoryId
+        }
     }
 
     private fun clearOptionSelection() {
-        optionAButton.unSelectButton()
-        optionAButton.enableButton()
-        optionCButton.hideCheckButton()
+        optionAButton.buttonSelected = false
+        optionBButton.buttonSelected = false
+        optionCButton.buttonSelected = false
+        optionDButton.buttonSelected = false
 
+        optionAButton.buttonEnabled = true
+        optionBButton.buttonEnabled = true
+        optionCButton.buttonEnabled = true
+        optionDButton.buttonEnabled = true
 
-        optionAButton.hideCheckButton()
-        optionBButton.hideCheckButton()
-        optionDButton.hideCheckButton()
+        optionAButton.visibility = false
+        optionBButton.visibility = false
+        optionCButton.visibility = false
+        optionDButton.visibility = false
 
-        optionBButton.unSelectButton()
-        optionBButton.enableButton()
-
-        optionCButton.unSelectButton()
-        optionCButton.enableButton()
-
-        optionDButton.unSelectButton()
-        optionDButton.enableButton()
     }
 
     private fun optionButtonClickHandler(btn: OptionButton) {
@@ -185,10 +184,10 @@ class QuizActivity : AppCompatActivity() {
                 }
             }
 
-            optionAButton.disableButton()
-            optionBButton.disableButton()
-            optionCButton.disableButton()
-            optionDButton.disableButton()
+            optionAButton.buttonEnabled = false
+            optionBButton.buttonEnabled = false
+            optionCButton.buttonEnabled = false
+            optionDButton.buttonEnabled = false
         }
 
         btn.setOptionButtonClickListener {
@@ -220,9 +219,9 @@ class QuizActivity : AppCompatActivity() {
                 }
             }
 
-            selected?.selectButton()
-            selected?.disableButton()
-            selected?.showCheckButton()
+            selected?.buttonSelected = true
+            selected?.buttonEnabled = false
+            selected?.visibility = true
         }
     }
 }

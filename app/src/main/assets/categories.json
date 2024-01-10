@@ -5,23 +5,28 @@
     "image": "planet.png"
   },
   {
-    "id": 2,
+    "id": 4,
+    "name": "plants",
+    "image": "plant4.png"
+  },
+  {
+    "id": 4,
     "name": "maths",
     "image": "blackboard.png"
   },
   {
-    "id": 3,
+    "id": 2,
     "name": "biology",
     "image": "heart.png"
-  },
-  {
-    "id": 4,
-    "name": "plants",
-    "image": "plant.png"
   },
   {
     "id": 5,
     "name": "geography",
     "image": "globe.png"
+  },
+  {
+    "id": 6,
+    "name": "india",
+    "image": "temple.png"
   }
 ]
